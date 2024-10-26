@@ -1,0 +1,71 @@
+/* You can use a custom font that is hosted on your own server. 
+To do this, you will need to use the `@font-face` rule in your CSS
+file to define the font and specify the location of the font file on your server.
+
+Here's an example of how to do this:
+
+*/
+@charset "UTF-8";
+@font-face {
+    font-family: 'HostedMerriweather';
+    src: url('../Fonts/Merriweather/woffwoff2/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/Merriweather/woffwoff2/merriweather-regular-webfont.woff') format('woff'),
+         url('../Fonts/Merriweather/truetype/Merriweather-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'HostedMerriweather';
+    src: url('../Fonts/Merriweather/woffwoff2/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../Fonts/Merriweather/woffwoff2/merriweather-bold-webfont.woff') format('woff'),
+         url('../Fonts/Merriweather/truetype/Merriweather-Regular.ttf') format('truetype');
+         font-weight: bold;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'HostedMerriweather';
+    src: url('../Fonts/Merriweather/woffwoff2/merriweather-italic-webfont.woff2') format('woff2'),
+         url('../Fonts/Merriweather/woffwoff2/merriweather-italic-webfont.woff') format('woff'),
+         url('../Fonts/Merriweather/truetype/Merriweather-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: italic;
+}
+@font-face {
+    font-family: 'HostedMerriweather';
+    src: url('../Fonts/Merriweather/woffwoff2/merriweather-italic-webfont.woff2') format('woff2'),
+         url('../Fonts/Merriweather/woffwoff2/merriweather-italic-webfont.woff') format('woff'),
+         url('../Fonts/Merriweather/truetype/Merriweather-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: italic;
+}
+@font-face {
+    font-family: 'HostedMerriweather';
+    src: url('../Fonts/Merriweather/woffwoff2/merriweather-blackitalic-webfont.woff2') format('woff2'),
+         url('../Fonts/Merriweather/woffwoff2/merriweather-blackitalic-webfont.woff') format('woff'),
+         url('../Fonts/Merriweather/truetype/Merriweather-Regular.ttf') format('truetype');
+         font-weight: bold;
+         font-style: italic;
+}
+body {
+    font-family: 'HostedMerriweather', serif;
+}
+/*
+
+In this example, we're defining a custom font named "MyCustomFont" 
+using the `@font-face` rule. The `src` property specifies the location 
+of the font file on our server. We're providing two font file formats 
+(WOFF2 and WOFF) to ensure compatibility with different browsers.
+
+After defining the custom font using the `@font-face` 
+rule, we can use it in our CSS by specifying its name in the `font-family` property.
+
+Make sure that the file path specified in the `src` property is correct and that 
+the font file is accessible on your server.
+*/
+
+p.pixels20 {
+    font-size: 20px;
+}
+p.pixels30 {
+    font-size: 30px;
+}
