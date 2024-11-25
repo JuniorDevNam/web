@@ -22,7 +22,7 @@ from truyenqq_leech_tool import urls as tqqlturl
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    #path('', views.index, name='index'),
     path('', include(tqqlturl)),
     path('admin/', admin.site.urls),
 ]
