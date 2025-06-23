@@ -1,2 +1,2 @@
 # web
- Just a plave I practice HTML
+ Just a place I practice HTML
